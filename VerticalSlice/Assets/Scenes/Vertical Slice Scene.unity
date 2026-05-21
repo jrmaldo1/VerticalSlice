@@ -1041,7 +1041,7 @@ RectTransform:
   m_GameObject: {fileID: 82377782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3644757, y: 1.3644757, z: 1.3644757}
+  m_LocalScale: {x: 1.7600372, y: 1.7600372, z: 1.7600372}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1501402642}
@@ -1049,7 +1049,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -77}
+  m_AnchoredPosition: {x: -4.639, y: -106.05}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &82377784
@@ -8741,14 +8741,14 @@ RectTransform:
   m_GameObject: {fileID: 820368986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3536, y: 1.3536, z: 1.3536}
+  m_LocalScale: {x: 1.7460086, y: 1.7460086, z: 1.7460086}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 625508087}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16, y: 110}
+  m_AnchoredPosition: {x: 16, y: 135.17}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &820368988
@@ -8875,7 +8875,7 @@ RectTransform:
   m_GameObject: {fileID: 821635742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.956205, y: 4.224227, z: 5.246444}
+  m_LocalScale: {x: 30.77869, y: 14.516882, z: 18.029812}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 625508087}
@@ -16162,12 +16162,15 @@ MonoBehaviour:
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Beacon3","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Respawn
       3","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"Respawn3,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Respawn
+      2","value":{"$content":4,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"Respawn2,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 919132148432076420}
     - {fileID: 1392367038}
     - {fileID: 1860105417}
     - {fileID: 919132148432076434}
+    - {fileID: 919132148432076432}
 --- !u!136 &1392367041
 CapsuleCollider:
   m_ObjectHideFlags: 0
