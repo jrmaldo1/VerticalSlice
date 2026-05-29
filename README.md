@@ -33,7 +33,16 @@ animations. I coded Nyan Cat's to trigger when the player idles, and when his ve
 
 
 ## Milestone 3 Devlog
-Milestone 3 Devlog goes here.
+
+### Devlog Question 1
+My shader graph workds by causing an overlayed full screen effect to appear and pulsate on screen. In the next milestone this shader will pulse when the player completes a level, but for now it pulses on-screen for easy grading. The shader works similarly to the cobblestone shader effect introduced in the Week 8 Activity, but instead applies a different overlay with a different amount to the add node. While in our in-class activity we set the add node to 1, I decided to set it to 0.6 to ensure the effect would be more subtle, after cycling through a few textures, and ultimately settling on [this background from Wallpaper Cave](https://www.google.com/imgres?q=2000s%20background&imgurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp10924163.jpg&imgrefurl=https%3A%2F%2Fwallpapercave.com%2F2000s-grunge-desktop-wallpapers&docid=5CH5CNhrPvr6uM&tbnid=OgBRPfMnajPzKM&vet=12ahUKEwi9neSggtuUAxVGJUQIHU72C6UQnPAOegQIHhAA..i&w=1920&h=1080&hcb=2&ved=2ahUKEwi9neSggtuUAxVGJUQIHU72C6UQnPAOegQIHhAA#sv=CAMSXhoyKhBlLWRfSmUwRGtwd2pIVE9NMg5kX0plMERrcHdqSFRPTToOM0JCcGFlYjMtX2lwZE0gBCokCg5PZ0JSUGZNbmFqUHpLTRIQZS1kX0plMERrcHdqSFRPTRgAMAEYByDE3NeHAkoIEAEYASABKAE) which I wanted to be more faintly overlayed than our in-class overlay. The screenshot of my shader graph is linked [here.](https://docs.google.com/drawings/d/1IeJfyYdOiqkJLIyBlqg9t8Pt9LpI3IUg8jhlk9BLGD8/edit?usp=sharing)
+
+### Devlog Question 2
+During playtesting I recieved feedback that it was a bit difficult to tell which direction the player should go, despite my placement of the bright blue beacons to indicate this, and they suggested I added a directional arrow to indicate where to go. Thus, I decided to add a semi-transparent pink arrow at the beginning of the level, and created an animation for it in Blender to ensure maximum visibility. Another playtester previously suggested in week 6 that I add a score UI in the future, so I additionally decided to input that by adding a UI indicator in the upper left to show that the player gains points per level, beginning after the completion of the first level to track progression, and indicate to the player that they are moving in the right direction.
+
+### Devlog Question 3
+Since the last milestone, I have added more levels to the game, lengthening the playloop, and I have added UI to the end of the game. In the previous milestone, I was deducted points as the grader could not figure out how to interact with TacNayn at the end, and trigger his animation, so for this milestone I decided to add a UI message to indicate to the player that they need to jump on TacNayn to defeat him. Once he is defeated, his death animation plays, and a message displays on screen to indicate to the player that they have won!
+
 ## Milestone 4 Devlog
 Milestone 4 Devlog goes here.
 ## Final Devlog
@@ -42,3 +51,4 @@ Final Devlog goes here.
 [Platform Tiles - PolyPack](https://assetstore.unity.com/packages/3d/environments/platform-tiles-polypack-209922)
 [Real Stars Skybox Lite](https://assetstore.unity.com/packages/3d/environments/sci-fi/real-stars-skybox-lite-116333)\
 [GameDev Starter Kit - Platformer [Free Edition]](https://www.fab.com/listings/cd5d54fa-ba2a-48e5-870b-7ca1f8689110)
+[Wallpaper Cave Background](https://www.google.com/imgres?q=2000s%20background&imgurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp10924163.jpg&imgrefurl=https%3A%2F%2Fwallpapercave.com%2F2000s-grunge-desktop-wallpapers&docid=5CH5CNhrPvr6uM&tbnid=OgBRPfMnajPzKM&vet=12ahUKEwi9neSggtuUAxVGJUQIHU72C6UQnPAOegQIHhAA..i&w=1920&h=1080&hcb=2&ved=2ahUKEwi9neSggtuUAxVGJUQIHU72C6UQnPAOegQIHhAA#sv=CAMSXhoyKhBlLWRfSmUwRGtwd2pIVE9NMg5kX0plMERrcHdqSFRPTToOM0JCcGFlYjMtX2lwZE0gBCokCg5PZ0JSUGZNbmFqUHpLTRIQZS1kX0plMERrcHdqSFRPTRgAMAEYByDE3NeHAkoIEAEYASABKAE)
