@@ -43,12 +43,29 @@ During playtesting I recieved feedback that it was a bit difficult to tell which
 ### Devlog Question 3
 Since the last milestone, I have added more levels to the game, lengthening the playloop, and I have added UI to the end of the game. In the previous milestone, I was deducted points as the grader could not figure out how to interact with TacNayn at the end, and trigger his animation, so for this milestone I decided to add a UI message to indicate to the player that they need to jump on TacNayn to defeat him. Once he is defeated, his death animation plays, and a message displays on screen to indicate to the player that they have won! More planets have been added to the background as well, as the previous ones in the game, the player now travels past, and I wanted to have more in view for the player to see in the distance.
 
-## Milestone 4 Devlog
-Milestone 4 Devlog goes here.
+
 ## Final Devlog
-Final Devlog goes here.
+## Devlog Question 1
+
+My core gameplay loop involves traversing through platform based levels to progress to the final boss fight at the end of the game. The player plays as Nyan Cat, collecting, and utilizing boosts to assist their way through the levels (which activate a rainbow trail), until they meet Tac Nayn at the last level, and must defeat him. There is currently 5 levels, 4 platform based levels, and 1 final boss level at the end of the game. Nyan Cat and Tac Nyan each have their own models that I created for them, alongside animations that I created for both them and the power-ups. Nyan Cat and Tac Nyan each have their own animation states as well (idling, walking, and a defeated state for Tac Nayn). 
+
+My content does not deviate too much from my original plan for my vertical slice, other than the fact that I have more levels in my vertical slice than I initially anticipated, and I decided to construct my power-ups/boosts a bit differently from what I initially had in mind. This content illustrates to the player what the full game would be like by displaying each feature that they can expect to be in the game: varied platform levels with respawn beacons, boosts with an accompied rainbow visual cue, pixelated UI elements (ex. starting screen, score UI) as a callback to Nyan Cat's original 8-bit design, and the final boss, Tac Nayn, and what his boss fight may look like.
+
+## Devlog Question 2
+
+My rendering effect is activated through gameplay logic with a combination of visual scripting and C# scripts. My rendering effect is a full screen effect that activates at each beacon, when a player completes a level, and their score is updated. The effect deactivates shortly after. Each beacon is controlled by a C# script (labeled "Full Screen Controller") which is attached to the logic of each of the beacons' script machines to trigger when they are touched by the player, and to deactivate after their timer has run out. The C# scripts contain logic to set the full screen effect to active, as there is not a visual script node to grab a "ScriptableRendererFeature" which is what my effect is. The C# script additionally triggers a timer which can be adjusted in the inspector, as I found that using a timer node in visual scripting, coupled with a C# script to disable the effect did not always trigger properly, thus integrating the timer into the script itself ensured there would be no bugs. [Attached here is a screenshot of one of the scripts, alongside one of the beacon's script machines.](https://docs.google.com/drawings/d/14k32M08NnQTmBHTxL9sgf7gdd8ZhFJY1Snntp1ihdRY/edit)
+
+## Devlog Question 3
+
+My process for breaking down a large project into specific systems involves first, deciding what my system is (ex. a 3D platformer, a themed game, etc.), next is to begin breaking down what I need to create this system through the use of a bubble diagram to map my system out as a whole, and to decide what I need to cut. Often, I have found that once you take a look at everything from afar with a bubble diagram, your scope becomes revealed, as you're able to visualize, and physically see, what is perhaps beyond your capability, too ambitious for  certain time constraints, or too complicated for your project. After scoping I then go into task step break-downs for each task, which allows me to map out how I will tackle it, which helps make the task seem less daunting and more achievable. I find step break-downs to increase my confidence as I can feel that I am going in with a bit of a plan, rather than diving in blind, and not knowing where to start. Both bubble diagrams, and task step break-downs we have practiced in class this quarter, and I feel I will be definitely permanently incorporating both into my planning process, especially the task step break-downs, which helped me feel less panicked by seemingly large tasks. 
+
+I remember stepping into one of our classes this quarter ashamed that I hadn't been able to complete the task I set for myself that week, for my vertical slice, and in-class, we were introduced to the task step break-down process. This task involved attaching animations to my player. After I had mapped out the task, I found that I was able to not only feel more confident in approaching the task, but ended up completing it almost entirely within our class time. I had both created custom animations for my player, exported them as FBX files, and attached them to unique animation states. Without the break-down I didn't even have a clue of how to start, and was desperately attempting to find tutorials for help, though, with a little specificity in planning, I was able to figure out how to approach and complete the task myself!
+
 ## Open-source assets
 [Platform Tiles - PolyPack](https://assetstore.unity.com/packages/3d/environments/platform-tiles-polypack-209922)
-[Real Stars Skybox Lite](https://assetstore.unity.com/packages/3d/environments/sci-fi/real-stars-skybox-lite-116333)\
+
+[Real Stars Skybox Lite](https://assetstore.unity.com/packages/3d/environments/sci-fi/real-stars-skybox-lite-116333)
+
 [GameDev Starter Kit - Platformer [Free Edition]](https://www.fab.com/listings/cd5d54fa-ba2a-48e5-870b-7ca1f8689110)
+
 [Wallpaper Cave Background](https://www.google.com/imgres?q=2000s%20background&imgurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp10924163.jpg&imgrefurl=https%3A%2F%2Fwallpapercave.com%2F2000s-grunge-desktop-wallpapers&docid=5CH5CNhrPvr6uM&tbnid=OgBRPfMnajPzKM&vet=12ahUKEwi9neSggtuUAxVGJUQIHU72C6UQnPAOegQIHhAA..i&w=1920&h=1080&hcb=2&ved=2ahUKEwi9neSggtuUAxVGJUQIHU72C6UQnPAOegQIHhAA#sv=CAMSXhoyKhBlLWRfSmUwRGtwd2pIVE9NMg5kX0plMERrcHdqSFRPTToOM0JCcGFlYjMtX2lwZE0gBCokCg5PZ0JSUGZNbmFqUHpLTRIQZS1kX0plMERrcHdqSFRPTRgAMAEYByDE3NeHAkoIEAEYASABKAE)
